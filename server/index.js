@@ -22,6 +22,11 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "OK" });
 });
 
+app.get("/", (req, res) => {
+  res.send("🎉 Backend is working!");
+});
+
+
 // -------------------- CRUD Routes -------------------- //
 
 // 📤 GET all users
